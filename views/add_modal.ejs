@@ -1,0 +1,89 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="add-modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tambah Hijab</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="/hijab" method="POST">
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="name">idproduk</label>
+            <input
+              type="text"
+              class="form-control"
+              id="idproduk"
+              name="idproduk"
+              placeholder="Enter idproduk"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">namaproduk</label>
+            <input
+              type="text"
+              class="form-control"
+              id="namaproduk"
+              name="namaproduk"
+              placeholder="Enter namaproduk"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">harga</label>
+            <input
+              type="number"
+              class="form-control"
+              id="harga"
+              name="harga"
+              placeholder="Enter harga"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">gambar</label>
+            <input
+              type="string"
+              class="form-control"
+              id="gambar"
+              name="gambar"
+              placeholder="Enter gambar"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">deskripsi</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              placeholder="Masukan deskripsi"
+              name="deskripsi"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
